@@ -1,7 +1,7 @@
 # Apollo and Vuejs for Vitejs
 
 <p align="center">
-  <img src="https://hsto.org/webt/60/14/56/601456d15afd1062653689.png">
+  <img src="https://raw.githubusercontent.com/Rezvitsky/vitejs-apollo/main/src/assets/logo.png">
   <br>
 </p>
 
