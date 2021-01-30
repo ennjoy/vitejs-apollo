@@ -1,23 +1,13 @@
 <template>
-
 </template>
 
 <script setup>
-import { gql } from '@apollo/client/core'
 import apolloClient from '../apollo/client.js'
+import { EXCHANGE_RATES } from '../graphql'
 
-const EXCHANGE_RATES = gql`
-  query GetExchangeRates {
-    rates(currency: "USD") {
-      currency
-      rate
-    }
-  }
-`
-
-const data = apolloClient.query({
+const { data: { rates } } = await apolloClient.query({
   query: EXCHANGE_RATES
 })
 
-.then(data => console.log(data))
+console.log(rates)
 </script>
