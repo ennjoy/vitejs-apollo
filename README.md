@@ -11,13 +11,11 @@
 
 Hey! For me, it was necessary to use apollo-client with Vite 2. And while there are no clean libraries that will work only with Vuejs, then we will manage with what we have. The Apollo team wrote a client only for react and therefore we have to mess things up from: ```@apollo/client/core```
 
-<br>
-
 # Start 🚀
 
 First, we need to install the ```@apollo/client``` package. This can be done with the command below:
 
-```npm i -S @apollo/client // OR yarn add @apollo/client```
+    npm i @apollo/client // OR yarn add @apollo/client
 
 <br>
 
