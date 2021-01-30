@@ -90,14 +90,10 @@ You also need to make changes to ```vite.config.js```
 # What's next?
 We can now use ```@apollo/client``` along with Vuejs. To try this stack, you can **clone the repository**.
 
-<br>
-
 ## Installation
 To install packages
 
     npm install // yarn install
-
-<br>
 
 Launch
 
