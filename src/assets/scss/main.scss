@@ -48,6 +48,18 @@ body {
                 }
             }
         }
+        .response {
+            background-color: #eee;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 70px;
+            height: 500px;
+            width: 500px;
+            overflow-y: scroll;
+            code {
+                font-size: 20px;
+            }
+        }
     }
 }
 

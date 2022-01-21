@@ -1,14 +1,3 @@
-<template>
-  <div class="welcome">
-    <span>{{ msg }}</span>
-    <span class="words">
-        <ul>
-            <li v-for="(word, index) in words" :key="index" :class="word.class">{{ word.word }}</li>
-        </ul>
-    </span> 
-  </div>
-</template>
-
 <script setup>
 import { defineProps, reactive } from 'vue'
 
@@ -31,3 +20,14 @@ const words = reactive([
     }
 ])
 </script>
+
+<template>
+  <div class="welcome">
+    <span>{{ msg }}</span>
+    <span class="words">
+        <ul>
+            <li v-for="(word, index) in words" :key="index" :class="word.class">{{ word.word }}</li>
+        </ul>
+    </span> 
+  </div>
+</template>
