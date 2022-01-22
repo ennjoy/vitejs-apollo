@@ -6,14 +6,12 @@ import { EXCHANGE_RATES } from '../graphql'
 const response = ref([])
 
 onMounted(async () => {
-  const { data: { rates } } = await apolloClient.query({
+  const { data } = await apolloClient.query({
     query: EXCHANGE_RATES
   })
 
-  response.value = rates
+  response.value = data.rates
 })
-
-// console.log(rates)
 </script>
 
 <template>

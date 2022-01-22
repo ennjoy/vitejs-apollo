@@ -44,14 +44,19 @@ We can now import apollo.js into the Vuejs component
 // src/components/ApolloHello.vue
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import apolloClient from '../apollo/client.js'
 import { EXCHANGE_RATES } from '../graphql'
 
-const { data: { rates } } = await apolloClient.query({
-  query: EXCHANGE_RATES
-})
+const response = ref([])
 
-console.log(rates)
+onMounted(async () => {
+  const { data } = await apolloClient.query({
+    query: EXCHANGE_RATES
+  })
+
+  response.value = data.rates
+})
 </script>
 ```
 
